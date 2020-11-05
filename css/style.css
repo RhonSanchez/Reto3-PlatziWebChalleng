@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --primary-one: hsl(0, 78%, 62%);
+  --primary-two: hsl(180, 62%, 55%);
+  --primary-three: hsl(34, 97%, 64%);
+  --primary-four: hsl(212, 86%, 64%);
+  --neutral-one: hsl(234, 12%, 34%);
+  --neutral-two: hsl(229, 6%, 66%);
+  --neutral-three: hsl(0, 0%, 98%);
+  --font-size: 15px;
+  --typography: "Poppins", sans-serif;
+  --extra-light: 200;
+  --regular: 400;
+  --semi-bold: 600;
+}
+
+body {
+  font-family: var(--typography);
+  font-size: var(--font-size);
+  background-color: var(--neutral-three);
+}
+
+.container {
+  margin: 80px 20px;
+}
+
+.text {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: var(--extra-light);
+  color: var(--neutral-one);
+}
+
+.title strong {
+  font-weight: var(--semi-bold);
+}
+
+.description {
+  font-size: 1em;
+  font-weight: var(--regular);
+  color: var(--neutral-two);
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cards-contain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 8px;
+  padding: 20px 30px;
+  background-color: white;
+  -webkit-box-shadow: 2px 3px 23px -4px var(--neutral-two);
+  -moz-box-shadow: 2px 3px 23px -4px var(--neutral-two);
+  box-shadow: 2px 3px 23px -4px var(--neutral-two);
+}
+
+.card-one {
+  border-top: 4px solid var(--primary-two);
+}
+
+.card-two {
+  border-top: 4px solid var(--primary-one);
+}
+
+.card-three {
+  border-top: 4px solid var(--primary-three);
+}
+
+.card-four {
+  border-top: 4px solid var(--primary-four);
+}
+
+.card-title {
+  font-size: 1em;
+  color: var(--neutral-one);
+  font-weight: var(--semi-bold);
+}
+
+.card-description {
+  font-size: 0.8em;
+  font-weight: var(--regular);
+  color: var(--neutral-two);
+}
+
+.card-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 2.4em;
+  }
+
+  .description {
+    font-size: 1.4em;
+  }
+
+  .text {
+    width: 50%;
+    margin: 80px auto;
+  }
+
+  .card {
+    width: 23%;
+    height: 180px;
+    padding: 15px 30px 30px 30px;
+  }
+
+  .cards-contain {
+    width: 27%;
+    gap: 50px;
+  }
+
+  .cards-contain .card {
+    width: 100%;
+  }
+
+  .cards {
+    gap: 50px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 1.3em;
+    color: var(--neutral-one);
+    font-weight: var(--semi-bold);
+  }
+
+  .card-description {
+    font-size: 0.9em;
+    font-weight: var(--regular);
+    color: var(--neutral-two);
+  }
+}
